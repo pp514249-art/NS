@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="description" content="NS Esports — Free Fire, played without limits. Meet the roster, explore the stats, and earn your place on the squad." />
+  <title>NS Esports — Free Fire, No Limits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topline"><span class="live-dot"></span> RECRUITMENT IS OPEN <span class="topline-sep">/</span> FREE FIRE SQUAD</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="NS Esports home"><span class="brand-mark"><span>NS</span></span><span class="brand-name">NS<span>ESPORTS</span></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a><a class="nav-link" href="#stats">Team stats</a><a class="nav-link" href="#join">Join us</a><a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-cta" href="#join">GET IN THE GAME <span>↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div><div class="hero-glow"></div>
+      <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> FREE FIRE • EST. 2021</div>
+        <h1>DROP IN.<br><span>STAND OUT.</span></h1>
+        <p class="hero-sub">We don’t wait for the zone. We own it.<br>Meet the squad rewriting the endgame.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#roster">MEET THE SQUAD <span>↗</span></a><a class="button button-quiet" href="#join"><span class="play-icon">▶</span> YOUR NEXT MOVE</a></div>
+        <div class="hero-note"><span class="live-dot"></span> ACTIVE • ALWAYS HUNGRY</div>
+      </div>
+      <div class="hero-visual" aria-label="NS Esports neon team emblem illustration"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><div class="hero-sigil"><div class="sigil-top">N</div><div class="sigil-slash"></div><div class="sigil-bottom">S</div><div class="sigil-caption">NO SHORTCUTS</div></div><span class="visual-tag tag-left">BATTLE<br>READY</span><span class="visual-tag tag-right">BOOYAH<br>HUNTERS</span><div class="visual-cross cross-a">+</div><div class="visual-cross cross-b">+</div></div>
+      <a class="scroll-hint" href="#roster"><span></span> SCROLL TO EXPLORE</a><div class="hero-index">01 <span>—</span> 04</div>
+    </section>
+
+    <section class="roster section-wrap" id="roster">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> THE PEOPLE BEHIND THE PLAYS</div><h2>THE <span>SQUAD</span></h2></div><div class="section-meta"><span class="live-dot"></span> ACTIVE LINEUP <b id="roster-count">04 PLAYERS</b></div></div>
+      <div class="roster-grid" id="roster-grid"></div>
+    </section>
+
+    <section class="stats-section" id="stats"><div class="stats-inner"><div class="stats-heading"><div class="eyebrow"><span class="eyebrow-line"></span> NUMBERS DON’T LIE</div><h2>BUILT FOR THE <span>BOOYAH.</span></h2><p>Every match is a chance to make a statement.</p></div><div class="stats-grid" id="stats-grid"></div><div class="stats-foot"><span>SEASON 08</span><span class="stats-foot-line"></span><span>UPDATED AFTER EVERY DROP</span></div></div></section>
+
+    <section class="join section-wrap" id="join"><div class="join-intro"><div class="eyebrow"><span class="eyebrow-line"></span> YOUR SHOT STARTS HERE</div><h2>READY TO<br><span>DROP IN?</span></h2><p>We’re looking for smart, hungry players who show up for their squad. Think you’ve got what it takes? Make your move.</p><div class="steps"><div class="step"><span class="step-num">01</span><div><b>FILL OUT THE FORM</b><small>Tell us who you are and how you play.</small></div><span class="step-check">↗</span></div><div class="step"><span class="step-num">02</span><div><b>PLAY YOUR TRIAL</b><small>Show us your game sense in a trial match.</small></div><span class="step-check">↗</span></div><div class="step"><span class="step-num">03</span><div><b>EARN YOUR SPOT</b><small>Pass the trial? Welcome to NS.</small></div><span class="step-check">✓</span></div></div><div class="join-callout"><span>✳</span> GOOD COMMS. GOOD VIBES. GREAT GAME SENSE.</div></div>
+      <div class="form-card"><div class="form-card-heading"><span class="form-kicker">NS RECRUITMENT • 2026</span><span class="form-open"><span class="live-dot"></span> OPEN</span></div><h3>PLAYER APPLICATION</h3><p class="form-lead">A few details, then it’s game on.</p><form id="join-form"><div class="form-grid"><label class="field field-wide">FULL NAME<input name="name" placeholder="Your name" required minlength="2" autocomplete="name" /></label><label class="field">FREE FIRE UID<input name="uid" placeholder="e.g. 123456789" required inputmode="numeric" pattern="[0-9]{5,15}" title="Enter a 5–15 digit Free Fire UID" /></label><label class="field">IN-GAME LEVEL<input name="level" type="number" min="1" max="100" placeholder="e.g. 58" required /></label><label class="field">K/D RATIO<input name="kd" type="number" min="0" max="99" step="0.01" placeholder="e.g. 3.42" required /></label><label class="field">PREFERRED ROLE<select name="role" required><option value="" disabled selected>Select your role</option><option>IGL</option><option>Rusher</option><option>Sniper</option><option>Support</option><option>Flex</option></select></label><label class="field">DISCORD<input name="discord" placeholder="username#0000" required /></label><label class="field">WHATSAPP NUMBER<input name="whatsapp" type="tel" placeholder="+1 234 567 8900" required /></label></div><label class="consent"><input type="checkbox" required /><span>I’m available for regular scrims and team practice.</span></label><button class="button button-primary submit-button" type="submit">SEND MY APPLICATION <span>↗</span></button><p class="privacy-note">By applying, you agree to be contacted about NS Esports tryouts.</p><div class="form-message" id="join-message" role="status" aria-live="polite"></div></form></div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="contact-inner"><div class="contact-copy"><div class="eyebrow"><span class="eyebrow-line"></span> LET’S TALK</div><h2>MAKE SOME<br><span>NOISE.</span></h2><p>Sponsors, collabs, or just want to say what’s up? Our inbox is open.</p><a class="email-link" href="mailto:hello@nsesports.gg">HELLO@NSESPORTS.GG <span>↗</span></a></div><div class="contact-form-wrap"><div class="contact-label">SEND A QUICK MESSAGE <span>↘</span></div><form id="contact-form"><label class="field">YOUR NAME<input name="contactName" placeholder="How should we call you?" required minlength="2" /></label><label class="field">EMAIL ADDRESS<input name="email" type="email" placeholder="you@example.com" required /></label><label class="field">WHAT’S ON YOUR MIND?<textarea name="message" rows="3" placeholder="Tell us a little more..." required minlength="5"></textarea></label><button class="button button-outline" type="submit">SEND MESSAGE <span>↗</span></button><div class="form-message" id="contact-message" role="status" aria-live="polite"></div></form></div></div></section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark"><span>NS</span></span><span class="brand-name">NS<span>ESPORTS</span></span></a><p>NO SHORTCUTS. NO SECOND PLACE.</p><div class="socials"><a href="https://youtube.com" target="_blank" rel="noreferrer">YT <span>YOUTUBE ↗</span></a><a href="https://instagram.com" target="_blank" rel="noreferrer">IG <span>INSTAGRAM ↗</span></a><a href="https://discord.com" target="_blank" rel="noreferrer">DC <span>DISCORD ↗</span></a></div><span class="copyright">© 2026 NS ESPORTS. ALL RIGHTS RESERVED.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
